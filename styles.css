@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+    
+.flexbox-container {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-s; */
+}
+
+#black {
+    background-color: black;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#red {
+    background-color: red;
+}
+
+div {
+    height: 100%;
+    width: 33%;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+}
+
+@media screen and (max-width: 900px) {
+    .flexbox-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #red {
+        background-color: yellow;
+    }
+
+    #yellow {
+        background-color: red;
+    }
+
+    div {
+        height: 33%;
+        width: 100%;
+    }
+}
